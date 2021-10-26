@@ -2,6 +2,7 @@
 npm init -y
 npm i -D @babel/cli @babel/core @babel/node 
 npm i -D @babel/preset-env
+npm i ws
 ```
 
 
