@@ -3,8 +3,17 @@ npm init -y
 npm i -D @babel/cli @babel/core @babel/node 
 npm i -D @babel/preset-env
 npm i ws
+npm i socket.io
+npm i @socket.io/admin-ui
 ```
 
+```
+주소 : https://admin.socket.io/#/
+서버URL : http://localhost:3000/admin
+유저이름 : 설정값
+비밀번호 : 설정값
+path : 없어도됨
+```
 
 ```
 {
