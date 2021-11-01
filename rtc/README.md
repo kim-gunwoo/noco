@@ -1,10 +1,16 @@
 ```
 npm init -y
-npm i -D @babel/cli @babel/core @babel/node 
+npm i -D @babel/cli @babel/core @babel/node
 npm i -D @babel/preset-env
 npm i ws
 npm i socket.io
 npm i @socket.io/admin-ui
+
+
+npm i -g localtunnel // 로컬서버를 임시 uri를 생성해줌
+lt // localtunnel 설치시 사용 가능
+lt --port 3000  // 사용하는 포트
+
 ```
 
 ```
