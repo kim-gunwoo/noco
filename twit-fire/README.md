@@ -4,6 +4,7 @@ react and firebase study
 
 ```
 $ npm i firebase
+$ npm i uuid
 ```
 
 ## issue
