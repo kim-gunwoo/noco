@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/noco/static/css/main.a1b4d17b.chunk.css",
+    "main.css": "/noco/static/css/main.b459e906.chunk.css",
     "main.js": "/noco/static/js/main.dac63ccc.chunk.js",
     "main.js.map": "/noco/static/js/main.dac63ccc.chunk.js.map",
     "runtime-main.js": "/noco/static/js/runtime-main.456c4bf0.js",
@@ -8,13 +8,13 @@
     "static/js/2.b8780ced.chunk.js": "/noco/static/js/2.b8780ced.chunk.js",
     "static/js/2.b8780ced.chunk.js.map": "/noco/static/js/2.b8780ced.chunk.js.map",
     "index.html": "/noco/index.html",
-    "static/css/main.a1b4d17b.chunk.css.map": "/noco/static/css/main.a1b4d17b.chunk.css.map",
+    "static/css/main.b459e906.chunk.css.map": "/noco/static/css/main.b459e906.chunk.css.map",
     "static/js/2.b8780ced.chunk.js.LICENSE.txt": "/noco/static/js/2.b8780ced.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.456c4bf0.js",
     "static/js/2.b8780ced.chunk.js",
-    "static/css/main.a1b4d17b.chunk.css",
+    "static/css/main.b459e906.chunk.css",
     "static/js/main.dac63ccc.chunk.js"
   ]
 }
