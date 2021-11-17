@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { storageService } from "../fbase";
 import { deleteObject, ref } from "@firebase/storage";
 import { deleteDoc, getFirestore, doc, updateDoc } from "firebase/firestore";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Twit = ({ item, isOwner }) => {
   const [editing, setEditing] = useState(false);
@@ -32,10 +34,10 @@ const Twit = ({ item, isOwner }) => {
     setNewTwit(value);
   };
   return (
-    <div>
+    <div className="nweet">
       {editing ? (
         <>
-          <form onSubmit={onSubmit}>
+          <form className="container nweetEdit" onSubmit={onSubmit}>
             <input
               type="text"
               placeholder="Edit your Twit"
@@ -43,21 +45,25 @@ const Twit = ({ item, isOwner }) => {
               required
               onChange={onChange}
             />
-            <input type="submit" value="Update Twit" />
+            <input className="formBtn" type="submit" value="Update Twit" />
           </form>
-          <button onClick={toggleEditing}>Cancel</button>
+          <span onClick={toggleEditing} className="formBtn cancelBtn">
+            Cancel
+          </span>
         </>
       ) : (
         <>
           <h4>{item.text}</h4>
-          {item.attachmentUrl && (
-            <img src={item.attachmentUrl} width="50px" height="50px" />
-          )}
+          {item.attachmentUrl && <img src={item.attachmentUrl} />}
           {isOwner && (
-            <>
-              <button onClick={onDeleteClick}>Delete Twit</button>
-              <button onClick={toggleEditing}>Edit Twit</button>
-            </>
+            <div className="nweet__actions">
+              <span onClick={onDeleteClick}>
+                <FontAwesomeIcon icon={faTrash} />
+              </span>
+              <span onClick={toggleEditing}>
+                <FontAwesomeIcon icon={faPencilAlt} />
+              </span>
+            </div>
           )}
         </>
       )}

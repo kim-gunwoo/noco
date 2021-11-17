@@ -5,6 +5,9 @@ react and firebase study
 ```
 $ npm i firebase
 $ npm i uuid
+$ npm i @fortawesome/fontawesome-free @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons
+$ npm i @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+$ npm i gh-pages
 ```
 
 ## issue
